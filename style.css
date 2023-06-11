@@ -1,17 +1,272 @@
-@charset "UTF-8";
-
-body{
-    background-color: lightgoldenrodyellow;
+/*essa parte do css se refere a tela principal*/
+body {
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    color: crimson;
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+  
+.logo-container {
+    text-align: left;
 }
 
-h2{
-    color: crimson;
+nav {
+    background-color: #EC5300;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #402E32;
+}  
+
+header {
+    background-color: #EC5300;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #EC5300;  
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #402E32;
+}
+
+.search-cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisa {
+    margin-right: 10px;
+}
+
+.cart-button {
+    padding: 5px 10px;
+    background-color: #55433B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+main {
+    margin-top: 16%; 
+    margin-left: 5px; 
 }
 
 p{
-    text-align: justify;
+    font-size:x-large;
+    color: #55433B;
+    text-align: center;
 }
+
+footer {
+    position: relative;
+    bottom: 1%;
+    left: 0;
+    width: 100%;
+    background-color: #EC5300;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer table {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+footer th,footer td {
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+footer .hoveravel:hover {
+    color: #55433B;
+}
+
+footer .hoveravel:hover a{
+    color: #55433B;
+}
+
+.video {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.video-box {
+    display: none;
+}
+
+.video-box.active {
+    display: block;
+}
+
+.video-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #EC5300;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.video-arrow:hover {
+    background-color: #55433B;
+}
+
+.video-arrow.prev {
+    left: 23%;
+}
+
+.video-arrow.next {
+    right: 23%;
+}
+
+/*essa parte do css se refere as telas secundarias*/
+
+.botao {
+    position: relative;
+    left: 44.5%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #EC5300;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #55433B;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid-container h3 {
+    font-size: 20px;
+    color: #55433B;
+}
+
+.grid-container p {
+    font-size: 18px;
+    color: #55433B;
+}
+.produto {
+    width: 85%;
+    background-color: #F1F1F1;
+    border: 2px solid #CCC;
+    box-shadow: -4px 5px #402e324f ;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-color: #EC5300;
+}
+
+.produto-imagem {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.produto-nome {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.produto-preco {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.botao-adicionar {
+    padding: 10px 20px;
+    background-color: #EC5300;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao-adicionar:hover {
+    background-color: #55433B;
+}
+
+

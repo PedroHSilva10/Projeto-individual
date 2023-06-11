@@ -1,20 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <title>Bomboniere</title>
+    <title>Mercado Souza</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>
-        <!--titulo-->
-        <h1>Vegetais</h1>
-        <br>EM MANUTENÇÂO <br>por favor retorne a pagina principal.
-        <!--voltar para o tela principal-->
-        <br><br><a href="index.html">Voltar</a>
-    </p>
+    
+    <!--header-->
+    <header>
+        <div class="logo-container">
+            <!--Hierarquia de titulos-->
+            <h1>MERCADO SOUZA</h1>
+            <h2>Onde a Qualidade Encontra o Preço Baixo</h2>
+        </div>
+        <!--div para a barra de pesquisa-->
+        <div class="search-cart-container">
+            <form class="pesquisa">
+                <input type="text" placeholder="Pesquisar...">
+                <input type="submit" value="Buscar">
+            </form>
+            <!--botão do carrinho-->
+            <button class="cart-button">Carrinho</button>
+        </div>
+        <nav>
+            <!--lista sem ordem-->
+            <ul>
+                <li><a href="cervejas.html">Cervejas</a></li>
+                <li><a href="carnes.html">Carnes</a></li>
+                <li><a href="higiene.html">Higiene Pessoal</a></li>
+                <li><a href="limpeza.html">Limpeza</a></li>
+                <li><a href="lazer.html">Lazer</a></li>
+                <li><a href="hortifruti.html">Hortifrúti</a></li>
+                <li><a href="bomboniere.html">Bomboniere</a></li>
+                <li><a href="alimentos.html">Alimentos</a></li>
+                <li><a href="Pet.html">Pet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+<!--titulo e subtitulo-->
+    
+    <!--"""paragrafo""" de aprentaçâo-->
+    <p>Bomboniere <br><br>
+<!--clase dos produtos-->
+<div class="grid-container">
+    <div class="produto">
+        <img src="imagens/bomboniere/BatonGaroto.jpg" alt="BatonGaroto" class="produto-imagem">
+        <h3 class="produto-nome">Baton Garoto</h3>
+        <p class="produto-preco">R$ 1.00 uni</p>
+        <button class="botao-adicionar">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="imagens/bomboniere/BatonGarotoDuoBranco.jpg" alt="BatonGarotoDuoBranco" class="produto-imagem">
+        <h3 class="produto-nome">Baton Garoto DuoBranco</h3>
+        <p class="produto-preco">R$ 1.00 uni</p>
+        <button class="botao-adicionar">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="imagens/bomboniere/FiniArosMorango.jpg" alt="FiniArosMorango" class="produto-imagem">
+        <h3 class="produto-nome">Fini Aros Morango</h3>
+        <p class="produto-preco">R$ 5.25 uni</p>
+        <button class="botao-adicionar">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="imagens/bomboniere/HallsMorango.jpg" alt="HallsMorango" class="produto-imagem">
+        <h3 class="produto-nome">Halls Morango</h3>
+        <p class="produto-preco">R$ 1.50 uni</p>
+        <button class="botao-adicionar">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="imagens/bomboniere/Pirulito7Belo.jpg" alt="Pirulito7Belo" class="produto-imagem">
+        <h3 class="produto-nome">Pirulito 7Belo</h3>
+        <p class="produto-preco">R$ 0.50 uni</p>
+        <button class="botao-adicionar">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="imagens/bomboniere/Serenata.jpg" alt="Serenata" class="produto-imagem">
+        <h3 class="produto-nome">Serenata</h3>
+        <p class="produto-preco">R$ 1.50 uni</p>
+        <button class="botao-adicionar">Comprar</button>
+    </div>
+    
+</div>
+
+    <!--pog-->
+    <br><br>
+    <a class="botao" href="index.html">Voltar</a>
+    <br><br>
+    </main>
+<!--tabela que foi pedida nas atividades-->
+    <footer>
+        <table>
+            <tr>
+                <th>Central de Atendimento</th>
+                <th colspan="2">Categorias</th>
+                <th>Formas de Pagamento</th>
+            </tr>
+            <tr>
+                <td class="hoveravel">(74) 1 2345meia78</td>
+                <td class="hoveravel"><a href="#cervejas">Cervejas</a></td>
+                <td class="hoveravel"><a href="#carnes">Carnes</a></td>
+                <td class="hoveravel">Pix</td>
+            </tr>
+            <tr>
+                <td class="hoveravel">(74) 9 9304-8193</td>
+                <td class="hoveravel"><a href="#higiene">Higiene Pessoal</a></td>
+                <td class="hoveravel"><a href="#limpeza">Limpeza</a></td>
+                <td class="hoveravel">Dinheiro</td>
+            </tr>
+            <tr>
+                <td class="hoveravel">Dúvidas Frequentes</td>
+                <td class="hoveravel"><a href="#lazer">Lazer</a></td>
+                <td class="hoveravel"><a href="#hortifruti">Hortifrúti</a></td>
+                <td class="hoveravel">Cartão</td>
+                
+            </tr>
+            <tr>                
+                <td class="hoveravel">Fale Conosco</td>
+                <td class="hoveravel"><a href="#bomboniere">Bomboniere</a></td>
+                <td class="hoveravel"><a href="#alimentos">Alimentos</a></td>
+                <td class="hoveravel">Pérolas</td>
+            </tr>
+            <tr>
+                <td></td>
+                
+                <td class="hoveravel"><a href="#Pet">Pet</a></td>
+                <td class="hoveravel">Ouro</td>
+                <td class="hoveravel">Pontos na Matéria</td>
+            </tr>
+        </table>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

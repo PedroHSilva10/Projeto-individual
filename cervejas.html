@@ -1,54 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <title>Cervejas</title>
+    <title>Mercado Souza</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!--titulo-->
-    <h1>Cervejas</h1>
-
-<p>
-    <!--lista desordenada-->
-    <ul>
-
-        <br> Brahma lata R$ 3.49 uni <br>
-        <!--imagens dinamicas-->
-        <picture>
-            <source media="(max-width: 1050px)" srcset="imagens/brahmaP.jpeg" type="image/jpg">
-            <img src="imagens/brahmaG.jpeg" alt="Brahma">
-        </picture>
-        
-        <br> Skol lata R$ 3.49 uni <br>
-        <picture>
-            <source media="(max-width: 1050px)" srcset="imagens/skolP.jpg" type="image/jpg">
-            <img src="imagens/skolG.jpg" alt="Skol">
-        </picture>
-
-        <br> Stella garrafa  R$ 5.99 uni <br>
-        <picture>
-            <source media="(max-width: 1050px)" srcset="imagens/stellaP.jpg" type="image/jpg">
-            <img src="imagens/stellaG.jpg" alt="Stella">
-        </picture>
-      
-        <br>Budweiser garrafa R$ 5.99 uni <br>
-        <picture>
-            <source media="(max-width:1050px)" srcset="imagens/budweiserP.jpg" type="image/jpg">
-            <img src="imagens/budweiserG.jpg" alt="Budweiser">
-        </picture>
-        <br>Heineken garrafa R$ 7.99 uni <br>
-        <picture>
-            <source media="(max-width:1050px)" srcset="imagens/heinekenP.jpg" type="image/jpg">
-            <img src="imagens/heinekenG.jpg" alt="Heineken">
-        </picture>
-
-    </ul>
-     <br><br><a href="index.html">Voltar</a>
-</p> 
     
+    <!--header-->
+    <header>
+        <div class="logo-container">
+            <!--Hierarquia de titulos-->
+            <h1>MERCADO SOUZA</h1>
+            <h2>Onde a Qualidade Encontra o Preço Baixo</h2>
+        </div>
+        <!--div para a barra de pesquisa-->
+        <div class="search-cart-container">
+            <form class="pesquisa">
+                <input type="text" placeholder="Pesquisar...">
+                <input type="submit" value="Buscar">
+            </form>
+            <!--botão do carrinho-->
+            <button class="cart-button">Carrinho</button>
+        </div>
+        <nav>
+            <!--lista sem ordem-->
+            <ul>
+                <li><a href="cervejas.html">Cervejas</a></li>
+                <li><a href="carnes.html">Carnes</a></li>
+                <li><a href="higiene.html">Higiene Pessoal</a></li>
+                <li><a href="limpeza.html">Limpeza</a></li>
+                <li><a href="lazer.html">Lazer</a></li>
+                <li><a href="hortifruti.html">Hortifrúti</a></li>
+                <li><a href="bomboniere.html">Bomboniere</a></li>
+                <li><a href="alimentos.html">Alimentos</a></li>
+                <li><a href="Pet.html">Pet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+<!--titulo e subtitulo-->
+    
+        <!--"""paragrafo""" de aprentaçâo-->
+        <p>Cervejas <br><br>
+        <!--clase dos produtos-->
+        <div class="grid-container">
+            <div class="produto">
+                <img src="imagens/cerveja/AntarticaG.jpg" alt="Antartica" class="produto-imagem">
+                <h3 class="produto-nome">Antartica</h3>
+                <p class="produto-preco">R$ 3.00 uni</p>
+                <button class="botao-adicionar">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/cerveja/brahmaP.jpeg" alt="Brahma" class="produto-imagem">
+                <h3 class="produto-nome">Brahma</h3>
+                <p class="produto-preco">R$ 3.50 uni</p>
+                <button class="botao-adicionar">Comprar</button>
+            </div>   
+            <div class="produto">
+                <img src="imagens/cerveja/budweiserP.jpg" alt="Budweiser" class="produto-imagem">
+                <h3 class="produto-nome">Budweiser</h3>
+                <p class="produto-preco">R$ 6.00 uni</p>
+                <button class="botao-adicionar">Comprar</button>
+            </div>  
+            <div class="produto">
+                <img src="imagens/cerveja/CrystalP.jpg" alt="Crystal" class="produto-imagem">
+                <h3 class="produto-nome">Crystal</h3>
+                <p class="produto-preco">R$ 2.75 uni</p>
+                <button class="botao-adicionar">Comprar</button>
+            </div>  
+            <div class="produto">
+                <img src="imagens/cerveja/heinekenP.jpg" alt="Heineken" class="produto-imagem">
+                <h3 class="produto-nome">Heineken</h3>
+                <p class="produto-preco">R$ 6.00 uni</p>
+                <button class="botao-adicionar">Comprar</button>
+            </div>  
+            <div class="produto">
+                <img src="imagens/cerveja/ItaipavaP.jpg" alt="Itaipava" class="produto-imagem">
+                <h3 class="produto-nome">Itaipava</h3>
+                <p class="produto-preco">R$ 3.50 uni</p>
+                <button class="botao-adicionar">Comprar</button>
+            </div>  
+            <div class="produto">
+                <img src="imagens/cerveja/KaiserP.jpg" alt="Kaeiser" class="produto-imagem">
+                <h3 class="produto-nome">Kaeiser</h3>
+                <p class="produto-preco">R$ 2.50 uni</p>
+                <button class="botao-adicionar">Comprar</button>
+            </div>  
+            <div class="produto">
+                <img src="imagens/cerveja/skolP.jpg" alt="Skol" class="produto-imagem">
+                <h3 class="produto-nome">Skol</h3>
+                <p class="produto-preco">R$ 3.50 uni</p>
+                <button class="botao-adicionar">Comprar</button>
+            </div>  
+            <div class="produto">
+                <img src="imagens/cerveja/stellaP.jpg" alt="Stella" class="produto-imagem">
+                <h3 class="produto-nome">Stella</h3>
+                <p class="produto-preco">R$ 6.00 uni</p>
+                <button class="botao-adicionar">Comprar</button>
+            </div>  
+        </div>
+        <!--pog-->
+        <br><br>
+        <a class="botao" href="index.html">Voltar</a>
+        <br><br>
+    </main>
+<!--tabela que foi pedida nas atividades-->
+    <footer>
+        <table>
+            <tr>
+                <th>Central de Atendimento</th>
+                <th colspan="2">Categorias</th>
+                <th>Formas de Pagamento</th>
+            </tr>
+            <tr>
+                <td class="hoveravel">(74) 1 2345meia78</td>
+                <td class="hoveravel"><a href="#cervejas">Cervejas</a></td>
+                <td class="hoveravel"><a href="#carnes">Carnes</a></td>
+                <td class="hoveravel">Pix</td>
+            </tr>
+            <tr>
+                <td class="hoveravel">(74) 9 9304-8193</td>
+                <td class="hoveravel"><a href="#higiene">Higiene Pessoal</a></td>
+                <td class="hoveravel"><a href="#limpeza">Limpeza</a></td>
+                <td class="hoveravel">Dinheiro</td>
+            </tr>
+            <tr>
+                <td class="hoveravel">Dúvidas Frequentes</td>
+                <td class="hoveravel"><a href="#lazer">Lazer</a></td>
+                <td class="hoveravel"><a href="#hortifruti">Hortifrúti</a></td>
+                <td class="hoveravel">Cartão</td>
+                
+            </tr>
+            <tr>                
+                <td class="hoveravel">Fale Conosco</td>
+                <td class="hoveravel"><a href="#bomboniere">Bomboniere</a></td>
+                <td class="hoveravel"><a href="#alimentos">Alimentos</a></td>
+                <td class="hoveravel">Pérolas</td>
+            </tr>
+            <tr>
+                <td></td>
+                
+                <td class="hoveravel"><a href="#Pet">Pet</a></td>
+                <td class="hoveravel">Ouro</td>
+                <td class="hoveravel">Pontos na Matéria</td>
+            </tr>
+        </table>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
