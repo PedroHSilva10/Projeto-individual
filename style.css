@@ -1,4 +1,4 @@
-/*essa parte do css se refere a tela principal*/
+/*essa parte do css se refere a tela principal e o esqueleto das outras telas*/ 
 body {
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #fff1ff;
     transition: color 0.3s ease;
 }
 
@@ -44,7 +44,7 @@ nav a:hover {
 
 header {
     background-color: #EC5300;
-    color: #fff;
+    color: #fff1ff;
     text-align: center;
     padding: 20px;
 }
@@ -72,7 +72,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #fff1ff;
     transition: color 0.3s ease;
 }
 
@@ -93,10 +93,13 @@ nav a:hover {
 .cart-button {
     padding: 5px 10px;
     background-color: #55433B;
-    color: #fff;
+    color: #fff1ff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.cart-button :hover{
+color: #EC5300;
 }
 
 
@@ -115,9 +118,9 @@ footer {
     position: relative;
     bottom: 1%;
     left: 0;
-    width: 100%;
+    width: 97%;
     background-color: #EC5300;
-    color: #fff;
+    color: #fff1ff;
     padding: 20px;
     text-align: center;
 }
@@ -134,7 +137,7 @@ footer th,footer td {
 
 footer a {
     text-decoration: none;
-    color: #fff;
+    color: #fff1ff;
     transition: color 0.3s ease;
 }
 
@@ -172,7 +175,7 @@ footer .hoveravel:hover a{
     height: 50px;
     border-radius: 50%;
     background-color: #EC5300;
-    color: #fff;
+    color: #fff1ff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +203,7 @@ footer .hoveravel:hover a{
     display: inline-block;
     padding: 10px 20px;
     background-color: #EC5300;
-    color: #fff;
+    color: #fff1ff;
     text-decoration: none;
     border-radius: 20px;
     font-size: 16px;
@@ -229,10 +232,10 @@ footer .hoveravel:hover a{
 }
 .produto {
     width: 85%;
-    background-color: #F1F1F1;
+    background-color: #fff1ff;
     border: 2px solid #CCC;
     box-shadow: -4px 5px #402e324f ;
-    border-radius: 20px;
+    border-radius: 7%;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
@@ -243,6 +246,8 @@ footer .hoveravel:hover a{
     width: 200px;
     height: 200px;
     margin-bottom: 10px;
+    border: 2px solid #EC5300; 
+    border-radius: 7%;
 }
 
 .produto-nome {
@@ -258,7 +263,7 @@ footer .hoveravel:hover a{
 .botao-adicionar {
     padding: 10px 20px;
     background-color: #EC5300;
-    color: #fff;
+    color: #fff1ff;
     border: none;
     border-radius: 20px;
     font-size: 16px;
@@ -269,4 +274,34 @@ footer .hoveravel:hover a{
     background-color: #55433B;
 }
 
+@media screen and (max-width: 768px) {
+    .product img {
+      width: 50%;
+    }
+  }
+
+  #listaOrdenada {
+    color: #55433B;
+    font-size: 130%;
+}
+
+#listaOrdenada h5 {
+    color: #EC5300;
+    font-size: 150%;
+}
+
+.HoverLi:hover {
+    color: #EC5300;
+}
+
+h4{
+    text-align: center;
+    font-size: 140%;
+    color: #55433B;
+}
+
+p{
+    font-size: 300%;
+    color: #EC5300;
+}
 
